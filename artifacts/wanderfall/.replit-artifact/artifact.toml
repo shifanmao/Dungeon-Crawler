@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Wanderfall"
+version = "1.0.0"
+id = "artifacts/wanderfall"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24585
+
+[services.development]
+run = "pnpm --filter @workspace/wanderfall run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wanderfall", "run", "build" ]
+publicDir = "artifacts/wanderfall/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24585"
+BASE_PATH = "/"

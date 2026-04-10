@@ -1,0 +1,165 @@
+You are building a mobile-first roguelite game called:
+
+🎮 FINAL PROJECT NAME: WANDERFALL
+
+────────────────────────────────────
+MISSION
+────────────────────────────────────
+
+Do NOT just build a game.
+
+Build a HIGHLY ADDICTIVE, replayable mobile roguelite travel game with strong “one more run” retention.
+
+This game must be designed like a HIT INDIE MOBILE GAME.
+
+Think:
+- Slay the Spire (addiction loop)
+- Vampire Survivors (simple but deep replay loop)
+- Oregon Trail (risk + storytelling)
+- GeoGuessr (global curiosity hook)
+
+────────────────────────────────────
+PRIMARY SUCCESS METRIC
+────────────────────────────────────
+
+The game is ONLY successful if:
+
+1. A player immediately understands what to do in <30 seconds
+2. A run is finishable in 5–12 minutes
+3. The player wants to immediately start another run
+4. Every run feels meaningfully different
+
+────────────────────────────────────
+CORE DESIGN RULE (VERY IMPORTANT)
+────────────────────────────────────
+
+Every system must support at least ONE of:
+
+- decision tension
+- randomness
+- replayability
+- emotional payoff
+
+If it does not, do NOT include it.
+
+────────────────────────────────────
+CORE GAME LOOP (NON-NEGOTIABLE)
+────────────────────────────────────
+
+START RUN
+→ choose simple starting modifier (risk/reward)
+→ receive limited resources
+
+FOR EACH STEP:
+→ choose next destination OR event path
+→ trigger random event
+→ make 1–2 meaningful choices
+→ update resources
+
+RESOURCES:
+- Money
+- Energy
+- Reputation
+
+END RUN:
+→ score summary
+→ unlocks
+→ immediate “restart run” button
+
+────────────────────────────────────
+WHAT MAKES THIS A HIT (YOU MUST ENFORCE THIS)
+────────────────────────────────────
+
+1. FAST START
+No tutorials longer than 10 seconds.
+
+2. CONSTANT TENSION
+Every choice must cost something.
+
+3. RANDOMNESS EVERY RUN
+No deterministic paths.
+
+4. SHORT RUN LENGTH
+Must finish a full run in <15 minutes.
+
+5. CLEAR HOOK
+The hook is:
+
+👉 “Travel the world, but every trip is a risky roguelite run where decisions compound.”
+
+────────────────────────────────────
+REQUIRED SYSTEMS (LEAN VERSION ONLY)
+────────────────────────────────────
+
+1. EVENT ENGINE (CORE SYSTEM)
+- lightweight random events
+- each event has 2–3 choices
+- outcomes affect resources
+
+2. NPC SYSTEM (SIMPLE BUT POWERFUL)
+- NPCs are archetypes (not scripted story)
+- each NPC has:
+  - mood
+  - trust score
+  - one dynamic effect
+
+3. DESTINATION MODIFIERS
+Each location randomly changes per run:
+- cheap / expensive
+- safe / chaotic
+- festival / normal
+
+4. RUN SCORING SYSTEM (CRITICAL FOR ADDICTION)
+Score must include:
+- survival time
+- wealth efficiency
+- risk taken
+- encounters survived
+- special events triggered
+
+5. META PROGRESSION (VERY LIGHT)
+Keep minimal:
+- unlock new starting modifiers only
+DO NOT overbuild meta systems
+
+────────────────────────────────────
+UX REQUIREMENTS
+────────────────────────────────────
+
+- Mobile-first UI
+- Big buttons
+- Fast interactions
+- No clutter
+- Immediate feedback (animations or text popups)
+- “One more run” button always visible after game over
+
+────────────────────────────────────
+IMPORTANT PRODUCT DIRECTION RULES
+────────────────────────────────────
+
+- Remove complexity that does not increase fun
+- Prefer simplicity over realism
+- Every mechanic must increase emotional tension or replayability
+- Do NOT overbuild RPG systems
+- Keep it addictive, not simulation-heavy
+
+────────────────────────────────────
+BUILD ORDER
+────────────────────────────────────
+
+1. Working playable loop first (MVP in <1 hour)
+2. Add events
+3. Add destinations variability
+4. Add scoring
+5. Add NPC light system
+6. Polish pacing
+
+────────────────────────────────────
+FINAL OUTPUT GOAL
+────────────────────────────────────
+
+A playable game that feels like:
+
+“Just one more run…”
+
+Start now.
